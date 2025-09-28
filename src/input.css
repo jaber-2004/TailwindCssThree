@@ -3,4 +3,5 @@
 @theme {
   --color-bgHead: #5e3bee;
   --font-popkon: "Poppins", sans-serif;
+  --drop-shadow-dH: 0 37px 80px rgba(0, 0, 0, 10%);
 }

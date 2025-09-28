@@ -20,6 +20,7 @@
     --default-mono-font-family: var(--font-mono);
     --color-bgHead: #5e3bee;
     --font-popkon: "Poppins", sans-serif;
+    --drop-shadow-dH: 0 37px 80px rgba(0, 0, 0, 10%);
   }
 }
 @layer base {
@@ -225,11 +226,11 @@
   .table {
     display: table;
   }
-  .w-1\/3 {
-    width: calc(1/3 * 100%);
-  }
   .w-1\/4 {
     width: calc(1/4 * 100%);
+  }
+  .w-\[32\%\] {
+    width: 32%;
   }
   .w-\[40\%\] {
     width: 40%;
@@ -249,6 +250,9 @@
   .justify-between {
     justify-content: space-between;
   }
+  .rounded-\[24px\] {
+    border-radius: 24px;
+  }
   .rounded-\[50px\] {
     border-radius: 50px;
   }
@@ -256,14 +260,20 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#F9F9FC\] {
+    background-color: #F9F9FC;
+  }
   .bg-bgHead {
     background-color: var(--color-bgHead);
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .px-\[90px\] {
-    padding-inline: 90px;
+  .px-\[35px\] {
+    padding-inline: 35px;
+  }
+  .px-\[48px\] {
+    padding-inline: 48px;
   }
   .px-\[310px\] {
     padding-inline: 310px;
@@ -273,6 +283,9 @@
   }
   .py-7\.5 {
     padding-block: calc(var(--spacing) * 7.5);
+  }
+  .py-\[50px\] {
+    padding-block: 50px;
   }
   .py-\[100px\] {
     padding-block: 100px;
@@ -318,6 +331,10 @@
   .text-\[60px\] {
     font-size: 60px;
   }
+  .leading-\[30px\] {
+    --tw-leading: 30px;
+    line-height: 30px;
+  }
   .leading-\[34px\] {
     --tw-leading: 34px;
     line-height: 34px;
@@ -357,6 +374,11 @@
   }
   .blur {
     --tw-blur: blur(8px);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .drop-shadow-dH {
+    --tw-drop-shadow-size: drop-shadow(0 37px 80px var(--tw-drop-shadow-color, rgba(0, 0, 0, 10%)));
+    --tw-drop-shadow: drop-shadow(var(--drop-shadow-dH));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .filter {
